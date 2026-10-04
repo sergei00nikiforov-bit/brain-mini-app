@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #ffffff;
+  color: #111111;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  color: #666;
+}
+
+.content {
+  flex: 1;
+}
+
+.day {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.category {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 10px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 1.3;
+  font-weight: 650;
+  margin: 0 0 32px;
+  white-space: pre-line;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  width: 100%;
+  text-align: left;
+  padding: 17px 18px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 14px;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border 0.15s ease;
+}
+
+.answer:hover {
+  transform: translateY(-1px);
+  background: #f8f8f8;
+}
+
+.answer:disabled {
+  cursor: default;
+}
+
+.answer.correct {
+  background: #eaf8ef;
+  border-color: #76c893;
+}
+
+.answer.wrong {
+  background: #fff0f0;
+  border-color: #e58b8b;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f7f7f7;
+}
+
+.result-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.xp-earned {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.result p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 11px;
+  padding-top: 40px;
+}
